@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package oragectrl;
+
+service OrageCtrl {
+	rpc OrageStatus(StatusRequest) returns (StatusReply);
+}
+
+message StatusRequest {
+}
+
+message StatusReply {
+}

@@ -1,0 +1,34 @@
+[package]
+name = "orage"
+license = "MIT or Apache-2.0"
+version = "0.0.1"
+authors = ["Antoine Riard <dev@ariard.me>"]
+repository = "https://github.com/civkit/orage/"
+description = """A big metal Lightning node"""
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = [ "io-util", "macros", "rt", "rt-multi-thread", "sync", "net", "time" ] }
+bitcoin = "0.29.0"
+lightning = "0.0.115"
+lightning-block-sync = "0.0.115"
+lightning-persister = "0.0.115"
+lightning-net-tokio = "0.0.115"
+lightning-background-processor = { version = "0.0.115", features = [ "futures" ] }
+rand = "0.4"
+toml = "0.5"
+tonic = "0.9"
+prost = "0.11"
+time = "0.2"
+clap = { version = "4.3.8", features = ["derive"] }
+
+[[bin]]
+name = "oraged"
+path = "src/oraged.rs"
+
+[[bin]]
+name = "orage-cli"
+path = "src/orage-cli.rs"
+
+[build-dependencies]
+tonic-build = "0.9"
