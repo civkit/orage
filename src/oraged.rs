@@ -183,6 +183,48 @@ impl OrageCtrl for OrageManager {
 
 		Ok(Response::new(oragectrl::StatusReply {}))
 	}
+	
+	async fn add_gossip(&self, request: Request<oragectrl::GossipInsertionRequest>) -> Result<Response<oragectrl::GossipInsertionReply>, Status> {
+		println!("[ORAGED] add gossip request");
+
+		Ok(Response::new(oragectrl::GossipInsertionReply {}))
+	}
+
+	async fn autoclean_invoice(&self, request: Request<oragectrl::AutocleanInvoiceRequest>) -> Result<Response<oragectrl::AutocleanInvoiceReply>, Status> {
+		println!("[ORAGED] autoclean invoice request");
+
+		Ok(Response::new(oragectrl::AutocleanInvoiceReply {}))
+	}
+
+	async fn check(&self, request: Request<oragectrl::CheckRequest>) -> Result<Response<oragectrl::CheckReply>, Status> {
+		println!("[ORAGED] check");
+
+		Ok(Response::new(oragectrl::CheckReply {}))
+	}
+
+	async fn check_message(&self, request: Request<oragectrl::CheckMessageRequest>) -> Result<Response<oragectrl::CheckMessageReply>, Status> {
+		println!("[ORAGED] check message");
+
+		Ok(Response::new(oragectrl::CheckMessageReply {}))
+	}
+
+	async fn close(&self, request: Request<oragectrl::CloseRequest>) -> Result<Response<oragectrl::CloseReply>, Status> {
+		println!("[ORAGED] check message");
+
+		Ok(Response::new(oragectrl::CloseReply {}))
+	}
+
+	async fn connect_orage(&self, request: Request<oragectrl::ConnectOrageRequest>) -> Result<Response<oragectrl::ConnectOrageReply>, Status> {
+		println!("[ORAGED] connect");
+
+		Ok(Response::new(oragectrl::ConnectOrageReply {}))
+	}
+
+	async fn create_invoice(&self, request: Request<oragectrl::CreateInvoiceRequest>) -> Result<Response<oragectrl::CreateInvoiceReply>, Status> {
+		println!("[ORAGED] create invoice");
+
+		Ok(Response::new(oragectrl::CreateInvoiceReply {}))
+	}
 }
 
 struct OrageManager {}
