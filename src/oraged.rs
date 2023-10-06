@@ -183,7 +183,7 @@ impl OrageCtrl for OrageManager {
 
 		Ok(Response::new(oragectrl::StatusReply {}))
 	}
-	
+
 	async fn add_gossip(&self, request: Request<oragectrl::GossipInsertionRequest>) -> Result<Response<oragectrl::GossipInsertionReply>, Status> {
 		println!("[ORAGED] add gossip request");
 
@@ -225,7 +225,242 @@ impl OrageCtrl for OrageManager {
 
 		Ok(Response::new(oragectrl::CreateInvoiceReply {}))
 	}
+
+	async fn create_invoice_second(&self, request: Request<oragectrl::CreateInvoiceSecondRequest>) -> Result<Response<oragectrl::CreateInvoiceSecondReply>, Status> {
+		println!("[ORAGED] create invoice request");
+
+		Ok(Response::new(oragectrl::CreateInvoiceSecondReply {}))
+	}
+
+	async fn create_offer(&self, request: Request<oragectrl::CreateOfferRequest>) -> Result<Response<oragectrl::CreateOfferReply>, Status> {
+		println!("[ORAGED] create offer");
+
+		Ok(Response::new(oragectrl::CreateOfferReply {}))
+	}
+
+	async fn create_onion(&self, request: Request<oragectrl::CreateOnionRequest>) -> Result<Response<oragectrl::CreateOnionReply>, Status> {
+		println!("[ORAGED] create onion");
+
+		Ok(Response::new(oragectrl::CreateOnionReply {}))
+	}
+
+	async fn decode(&self, request: Request<oragectrl::DecodeRequest>) -> Result<Response<oragectrl::DecodeReply>, Status> {
+		println!("[ORAGED] decode");
+
+		Ok(Response::new(oragectrl::DecodeReply {}))
+	}
+
+	async fn decode_pay(&self, request: Request<oragectrl::DecodePayRequest>) -> Result<Response<oragectrl::DecodePayReply>, Status> {
+		println!("[ORAGED] decode pay");
+
+		Ok(Response::new(oragectrl::DecodePayReply {}))
+	}
+
+	async fn delexpired_invoice(&self, request: Request<oragectrl::DelexpiredInvoiceRequest>) -> Result<Response<oragectrl::DelexpiredInvoiceReply>, Status> {
+		println!("[ORAGED] delexpired invoice");
+
+		Ok(Response::new(oragectrl::DelexpiredInvoiceReply {}))
+	}
+
+	async fn delinvoice(&self, request: Request<oragectrl::DelinvoiceRequest>) -> Result<Response<oragectrl::DelinvoiceReply>, Status> {
+		println!("[ORAGED] del invoice");
+
+		Ok(Response::new(oragectrl::DelinvoiceReply {}))
+	}
+
+	async fn delpay(&self, request: Request<oragectrl::DelpayRequest>) -> Result<Response<oragectrl::DelpayReply>, Status> {
+		println!("[ORAGED] delpay");
+
+		Ok(Response::new(oragectrl::DelpayReply {}))
+	}
+
+	async fn disable_offer(&self, request: Request<oragectrl::DisableOfferRequest>) -> Result<Response<oragectrl::DisableOfferReply>, Status> {
+		println!("[ORAGED] disable offer");
+
+		Ok(Response::new(oragectrl::DisableOfferReply {}))
+	}
+
+	async fn disconnect(&self, request: Request<oragectrl::DisconnectRequest>) -> Result<Response<oragectrl::DisconnectReply>, Status> {
+		println!("[ORAGED] disconnect");
+
+		Ok(Response::new(oragectrl::DisconnectReply {}))
+	}
+
+	async fn estimate_fees(&self, request: Request<oragectrl::EstimateFeesRequest>) -> Result<Response<oragectrl::EstimateFeesReply>, Status> {
+		println!("[ORAGED] estimate fees");
+
+		Ok(Response::new(oragectrl::EstimateFeesReply {}))
+	}
+
+	async fn feerates(&self, request: Request<oragectrl::FeeratesRequest>) -> Result<Response<oragectrl::FeeratesReply>, Status> {
+		println!("[ORAGED] feerates");
+
+		Ok(Response::new(oragectrl::FeeratesReply {}))
+	}
+
+	async fn fetch_invoice(&self, request: Request<oragectrl::FetchInvoiceRequest>) -> Result<Response<oragectrl::FetchInvoiceReply>, Status> {
+		println!("[ORAGED] fetch invoices");
+
+		Ok(Response::new(oragectrl::FetchInvoiceReply {}))
+	}
+
+	async fn fund_channel(&self, request: Request<oragectrl::FundChannelRequest>) -> Result<Response<oragectrl::FundChannelReply>, Status> {
+		println!("[ORAGED] fund channel");
+
+		Ok(Response::new(oragectrl::FundChannelReply {}))
+	}
+
+	async fn fund_channel_cancel(&self, request: Request<oragectrl::FundChannelCancelRequest>) -> Result<Response<oragectrl::FundChannelCancelReply>, Status> {
+		println!("[ORAGED] fund channel connect");
+
+		Ok(Response::new(oragectrl::FundChannelCancelReply {}))
+	}
+
+	async fn fund_channel_complete(&self, request: Request<oragectrl::FundChannelCompleteRequest>) -> Result<Response<oragectrl::FundChannelCompleteReply>, Status> {
+		println!("[ORAGED] fund channel complete");
+
+		Ok(Response::new(oragectrl::FundChannelCompleteReply {}))
+	}
+
+	async fn fund_channel_start(&self, request: Request<oragectrl::FundChannelStartRequest>) -> Result<Response<oragectrl::FundChannelStartReply>, Status> {
+		println!("[ORAGED] fund channel start");
+
+		Ok(Response::new(oragectrl::FundChannelStartReply {}))
+	}
+
+	async fn fund_psbt(&self, request: Request<oragectrl::FundPsbtRequest>) -> Result<Response<oragectrl::FundPsbtReply>, Status> {
+		println!("[ORAGED] fund psbt");
+
+		Ok(Response::new(oragectrl::FundPsbtReply {}))
+	}
+
+	async fn get_chain_info(&self, request: Request<oragectrl::GetChainInfoRequest>) -> Result<Response<oragectrl::GetChainInfoReply>, Status> {
+		println!("[ORAGED] get chain info");
+
+		Ok(Response::new(oragectrl::GetChainInfoReply {}))
+	}
+
+	async fn get_info(&self, request: Request<oragectrl::GetInfoRequest>) -> Result<Response<oragectrl::GetInfoReply>, Status> {
+		println!("[ORAGED] get info");
+
+		Ok(Response::new(oragectrl::GetInfoReply {}))
+	}
+
+	async fn get_log(&self, request: Request<oragectrl::GetLogRequest>) -> Result<Response<oragectrl::GetLogReply>, Status> {
+		println!("[ORAGED] get log");
+
+		Ok(Response::new(oragectrl::GetLogReply {}))
+	}
+
+	async fn get_raw_block_by_height(&self, request: Request<oragectrl::GetRawBlockByHeightRequest>) -> Result<Response<oragectrl::GetRawBlockByHeightReply>, Status> {
+		println!("[ORAGED] get raw block by height");
+
+		Ok(Response::new(oragectrl::GetRawBlockByHeightReply {}))
+	}
+
+	async fn get_route(&self, request: Request<oragectrl::GetRouteRequest>) -> Result<Response<oragectrl::GetRouteReply>, Status> {
+		println!("[ORAGED] get route");
+
+		Ok(Response::new(oragectrl::GetRouteReply {}))
+	}
+
+	async fn get_shared_secret(&self, request: Request<oragectrl::GetSharedSecretRequest>) -> Result<Response<oragectrl::GetSharedSecretReply>, Status> {
+		println!("[ORAGED] get shared secret");
+
+		Ok(Response::new(oragectrl::GetSharedSecretReply {}))
+	}
+
+	async fn get_utxout(&self, request: Request<oragectrl::GetUtxoutRequest>) -> Result<Response<oragectrl::GetUtxoutReply>, Status> {
+		println!("[ORAGED] get utxout");
+
+		Ok(Response::new(oragectrl::GetUtxoutReply {}))
+	}
+
+	async fn help(&self, request: Request<oragectrl::HelpRequest>) -> Result<Response<oragectrl::HelpReply>, Status> {
+		println!("[ORAGED] help");
+
+		Ok(Response::new(oragectrl::HelpReply {}))
+	}
+
+	async fn invoice(&self, request: Request<oragectrl::InvoiceRequest>) -> Result<Response<oragectrl::InvoiceReply>, Status> {
+		println!("[ORAGED] invoice");
+
+		Ok(Response::new(oragectrl::InvoiceReply {}))
+	}
+
+	async fn keysend(&self, request: Request<oragectrl::KeysendRequest>) -> Result<Response<oragectrl::KeysendReply>, Status> {
+		println!("[ORAGED] keysend");
+
+		Ok(Response::new(oragectrl::KeysendReply {}))
+	}
+
+	async fn list_channels(&self, request: Request<oragectrl::ListChannelsRequest>) -> Result<Response<oragectrl::ListChannelsReply>, Status> {
+		println!("[ORAGED] list channels");
+
+		Ok(Response::new(oragectrl::ListChannelsReply {}))
+	}
+
+	async fn list_configs(&self, request: Request<oragectrl::ListConfigsRequest>) -> Result<Response<oragectrl::ListConfigsReply>, Status> {
+		println!("[ORAGED] list configs");
+
+		Ok(Response::new(oragectrl::ListConfigsReply {}))
+	}
+
+	async fn list_forwards(&self, request: Request<oragectrl::ListForwardsRequest>) -> Result<Response<oragectrl::ListForwardsReply>, Status> {
+		println!("[ORAGED] list forwards");
+
+		Ok(Response::new(oragectrl::ListForwardsReply {}))
+	}
+
+	async fn list_funds(&self, request: Request<oragectrl::ListFundsRequest>) -> Result<Response<oragectrl::ListFundsReply>, Status> {
+		println!("[ORAGED] list funds");
+
+		Ok(Response::new(oragectrl::ListFundsReply {}))
+	}
+
+	async fn list_invoices(&self, request: Request<oragectrl::ListInvoicesRequest>) -> Result<Response<oragectrl::ListInvoicesReply>, Status> {
+		println!("[ORAGED] list invoices");
+
+		Ok(Response::new(oragectrl::ListInvoicesReply {}))
+	}
+
+	async fn list_nodes(&self, request: Request<oragectrl::ListNodesRequest>) -> Result<Response<oragectrl::ListNodesReply>, Status> {
+		println!("[ORAGED] list nodes");
+
+		Ok(Response::new(oragectrl::ListNodesReply {}))
+	}
+
+	async fn list_offers(&self, request: Request<oragectrl::ListOffersRequest>) -> Result<Response<oragectrl::ListOffersReply>, Status> {
+		println!("[ORAGED] list offers");
+
+		Ok(Response::new(oragectrl::ListOffersReply {}))
+	}
+
+	async fn list_pays(&self, request: Request<oragectrl::ListPaysRequest>) -> Result<Response<oragectrl::ListPaysReply>, Status> {
+		println!("[ORAGED] list reply");
+
+		Ok(Response::new(oragectrl::ListPaysReply {}))
+	}
+
+	async fn list_peers(&self, request: Request<oragectrl::ListPeersRequest>) -> Result<Response<oragectrl::ListPeersReply>, Status> {
+		println!("[ORAGED] list peers");
+
+		Ok(Response::new(oragectrl::ListPeersReply {}))
+	}
+
+	async fn list_sendpays(&self, request: Request<oragectrl::ListSendpaysRequest>) -> Result<Response<oragectrl::ListSendpaysReply>, Status> {
+		println!("[ORAGED] list sendpays");
+
+		Ok(Response::new(oragectrl::ListSendpaysReply {}))
+	}
+
+	async fn list_transactions(&self, request: Request<oragectrl::ListTransactionsRequest>) -> Result<Response<oragectrl::ListTransactionsReply>, Status> {
+		println!("[ORAGED] list transactions");
+
+		Ok(Response::new(oragectrl::ListTransactionsReply {}))
+	}
 }
+
 
 struct OrageManager {}
 
