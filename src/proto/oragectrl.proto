@@ -4,10 +4,434 @@ package oragectrl;
 
 service OrageCtrl {
 	rpc OrageStatus(StatusRequest) returns (StatusReply);
+	rpc AddGossip(GossipInsertionRequest) returns (GossipInsertionReply);
+	rpc AutocleanInvoice(AutocleanInvoiceRequest) returns (AutocleanInvoiceReply);
+	rpc Check(CheckRequest) returns (CheckReply);
+	rpc CheckMessage(CheckMessageRequest) returns (CheckMessageReply);
+	rpc Close(CloseRequest) returns (CloseReply);
+	rpc ConnectOrage(ConnectOrageRequest) returns (ConnectOrageReply);
+	rpc CreateInvoice(CreateInvoiceRequest) returns (CreateInvoiceReply);
+	rpc CreateInvoiceSecond(CreateInvoiceSecondRequest) returns (CreateInvoiceSecondReply);
+	rpc CreateOffer(CreateOfferRequest) returns (CreateOfferReply);
+	rpc CreateOnion(CreateOnionRequest) returns (CreateOnionReply);
+	rpc Decode(DecodeRequest) returns (DecodeReply);
+	rpc DecodePay(DecodePayRequest) returns (DecodePayReply);
+	rpc DelexpiredInvoice(DelexpiredInvoiceRequest) returns (DelexpiredInvoiceReply);
+	rpc Delinvoice(DelinvoiceRequest) returns (DelinvoiceReply);
+	rpc Delpay(DelpayRequest) returns (DelpayReply);
+	rpc DisableOffer(DisableOfferRequest) returns (DisableOfferReply);
+	rpc Disconnect(DisconnectRequest) returns (DisconnectReply);
+	rpc EstimateFees(EstimateFeesRequest) returns (EstimateFeesReply);
+	rpc Feerates(FeeratesRequest) returns (FeeratesReply);
+	rpc FetchInvoice(FetchInvoiceRequest) returns (FetchInvoiceReply);
+	rpc FundChannel(FundChannelRequest) returns (FundChannelReply);
+	rpc FundChannelCancel(FundChannelCancelRequest) returns (FundChannelCancelReply);
+	rpc FundChannelComplete(FundChannelCompleteRequest) returns (FundChannelCompleteReply);
+	rpc FundChannelStart(FundChannelStartRequest) returns (FundChannelStartReply);
+	rpc FundPSBT(FundPSBTRequest) returns (FundPSBTReply);
+	rpc GetChainInfo(GetChainInfoRequest) returns (GetChainInfoReply);
+	rpc GetInfo(GetInfoRequest) returns (GetInfoReply);
+	rpc GetLog(GetLogRequest) returns (GetLogReply);
+	rpc GetRawBlockByHeight(GetRawBlockByHeightRequest) returns (GetRawBlockByHeightReply);
+	rpc GetRoute(GetRouteRequest) returns (GetRouteReply);
+	rpc GetSharedSecret(GetSharedSecretRequest) returns (GetSharedSecretReply);
+	rpc GetUtxout(GetUtxoutRequest) returns (GetUtxoutReply);
+	rpc Help(HelpRequest) returns (HelpReply);
+	rpc Invoice(InvoiceRequest) returns (InvoiceReply);
+	rpc Keysend(KeysendRequest) returns (KeysendReply);
+	rpc ListChannels(ListChannelsRequest) returns (ListChannelsReply);
+	rpc ListConfigs(ListConfigsRequest) returns (ListConfigsReply);
+	rpc ListForwards(ListForwardsRequest) returns (ListForwardsReply);
+	rpc ListFunds(ListFundsRequest) returns (ListFundsReply);
+	rpc ListInvoices(ListInvoicesRequest) returns (ListInvoicesReply);
+	rpc ListNodes(ListNodesRequest) returns (ListNodesReply);
+	rpc ListOffers(ListOffersRequest) returns (ListOffersReply);
+	rpc ListPays(ListPaysRequest) returns (ListPaysReply);
+	rpc ListPeers(ListPeersRequest) returns (ListPeersReply);
+	rpc ListSendpays(ListSendpaysRequest) returns (ListSendpaysReply);
+	rpc ListTransactions(ListTransactionsRequest) returns (ListTransactionsReply);
 }
 
 message StatusRequest {
 }
 
 message StatusReply {
+}
+
+message GossipInsertionRequest {
+
+}
+
+message GossipInsertionReply {
+
+}
+
+message AutocleanInvoiceRequest {
+
+}
+
+message AutocleanInvoiceReply {
+
+}
+
+message CheckRequest {
+
+}
+
+message CheckReply {
+
+}
+
+message CheckMessageRequest {
+
+}
+
+message CheckMessageReply {
+
+}
+
+message CloseRequest {
+
+}
+
+message CloseReply {
+
+}
+
+message ConnectOrageRequest {
+
+}
+
+message ConnectOrageReply {
+
+}
+
+message CreateInvoiceRequest {
+
+}
+
+message CreateInvoiceReply {
+
+}
+
+message CreateInvoiceSecondRequest {
+
+}
+
+message CreateInvoiceSecondReply {
+
+}
+
+message CreateOfferRequest {
+
+}
+
+message CreateOfferReply {
+
+}
+
+message CreateOnionRequest {
+
+}
+
+message CreateOnionReply {
+
+}
+
+message DecodeRequest {
+
+}
+
+message DecodeReply {
+
+}
+
+message DecodePayRequest {
+
+}
+
+message DecodePayReply {
+
+}
+
+message DelexpiredInvoiceRequest {
+
+}
+
+message DelexpiredInvoiceReply {
+
+}
+
+message DelinvoiceRequest {
+
+}
+
+message DelinvoiceReply {
+
+}
+
+message DelpayRequest {
+
+}
+
+message DelpayReply {
+
+}
+
+message DisableOfferRequest {
+
+}
+
+message DisableOfferReply {
+
+}
+
+message DisconnectRequest {
+
+}
+
+message DisconnectReply {
+
+}
+
+message EstimateFeesRequest {
+
+}
+
+message EstimateFeesReply {
+
+}
+
+message FeeratesRequest {
+
+}
+
+message FeeratesReply {
+
+}
+
+message FetchInvoiceRequest {
+
+}
+
+message FetchInvoiceReply {
+
+}
+
+message FundChannelRequest {
+
+}
+
+
+message FundChannelReply {
+
+}
+
+message FundChannelCancelRequest {
+
+}
+
+message FundChannelCancelReply {
+
+}
+
+message FundChannelCompleteRequest {
+
+}
+
+
+message FundChannelCompleteReply {
+
+}
+
+message FundChannelStartRequest {
+
+}
+
+message FundChannelStartReply {
+
+}
+
+message FundPSBTRequest {
+
+}
+
+message FundPSBTReply {
+
+}
+
+message GetChainInfoRequest {
+
+}
+
+message GetChainInfoReply {
+
+}
+
+message GetInfoRequest {
+
+}
+
+message GetInfoReply {
+
+}
+
+message GetLogRequest {
+
+}
+
+message GetLogReply {
+
+}
+
+message GetRawBlockByHeightRequest {
+
+}
+
+message GetRawBlockByHeightReply {
+
+}
+
+message GetRouteRequest {
+
+}
+
+message GetRouteReply {
+
+}
+
+message GetSharedSecretRequest {
+
+}
+
+message GetSharedSecretReply {
+
+}
+
+message GetUtxoutRequest {
+
+}
+
+message GetUtxoutReply {
+
+}
+
+message HelpRequest {
+
+}
+
+message HelpReply {
+
+}
+
+message InvoiceRequest {
+
+}
+
+message InvoiceReply {
+
+}
+
+message KeysendRequest {
+
+}
+
+message KeysendReply {
+
+}
+
+message LegacyPayRequest {
+
+}
+
+message LegacyPayReply {
+
+}
+
+message ListChannelsRequest {
+
+}
+
+message ListChannelsReply {
+
+}
+
+message ListConfigsRequest {
+
+}
+
+message ListConfigsReply {
+
+}
+
+message ListForwardsRequest {
+
+}
+
+message ListForwardsReply {
+
+}
+
+message ListFundsRequest {
+
+}
+
+message ListFundsReply {
+
+}
+
+message ListInvoicesRequest {
+
+}
+
+message ListInvoicesReply {
+
+}
+
+message ListNodesRequest {
+
+}
+
+message ListNodesReply {
+
+}
+
+message ListOffersRequest {
+
+}
+
+message ListOffersReply {
+
+}
+
+message ListPaysRequest {
+
+}
+
+message ListPaysReply {
+
+}
+
+message ListPeersRequest {
+
+}
+
+message ListPeersReply {
+
+}
+
+message ListSendpaysRequest {
+
+}
+
+message ListSendpaysReply {
+
+}
+
+message ListTransactionsRequest {
+
+}
+
+message ListTransactionsReply {
+
 }
